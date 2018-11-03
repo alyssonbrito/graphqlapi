@@ -9,8 +9,8 @@ module.exports = {
       //first to get single user instead of array with one user
       return await db('users').where({id}).first(); //first to get single user instead of array with one user
     },
-    //async getUser(_,{offset, limit}) {
-    async getUser() {
+    //async getUsers(_,{offset, limit}) {
+    async getUsers() {
       return await db('users')
     }
   }, //query
